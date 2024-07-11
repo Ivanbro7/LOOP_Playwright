@@ -69,9 +69,6 @@ test.describe('Asana Data-Driven Tests', () => {
         // Verify the card is within the right column
         await page.waitForSelector(`text="${data.column}"`);
         await expect(page.locator(`text="${data.card_title}"`)).toBeVisible();
-        //const card = await page.locator(`text="${data.card_title}"`);
-        //await expect(card).toBeVisible();
-        
       });
       
     });
